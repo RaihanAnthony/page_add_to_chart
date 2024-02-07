@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu {
+    margin-top: -80px;
+}
+
+.menu h1 span {
+    margin-right: 50px;
+}
+
+#continer-left {
+    width: 75%;
+    margin-left: 50px;
+    height: 80vh;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card{
+    width: 240px;
+    height: 360px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu .menu_box .menu_card .menu_image{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 5px 12px;
+    margin: 0 40px;
+    transition: 0.3s;
+}
+
+.container-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    background-color: #fac031;
+    height: 200vh;
+    transition: 0.5s;
+}
+
+.container-right h1 {
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container-right .checkOut {
+    position: sticky;
+    bottom: 0;
+    width: 365px;
+    margin-top: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fac031;
+}
+
+.container-right .checkOut .left .right{
+    color: whitesmoke;
+    border-right: 20px;
+    height: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: 5px solid #fac031;
+}
+
+
+
+.left {
+    background-color: tomato;
+    font-weight: bold;
+    cursor: pointer;
+    color: whitesmoke;
+    border: 0px;
+    text-align: center;
+    line-height: 8vh;
+    height: 8.65vh;
+}
+
+.right a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: rgb(8, 227, 8);
+    border: 0px;
+    text-align: center;
+    line-height: 8vh;
+    height: 8.65vh;
+    transition: font-weight 0.2s ease, transform 0.2s ease;
+}
+
+.right a:hover{
+    font-weight: 500;
+    transform: scale(1.02);
+}
+
+.listCard li{
+    display: grid;
+    grid-template-columns: 200px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 100px;
+    margin-left: 6px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+.card-right {
+    display: flex;
+    justify-content: end;
+    margin-left: 25px;
+    align-items: end;
+}
+
+.button {
+    background-color: none;
+    border-radius: none;
+}
+
+.container-popup-waybuy{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; left: 0;
+    background: rgb(0, 0, 0,.3);
+}
+
+.container-popup-waybuy .model{
+    height: 350px;
+    width: 350px;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 7.5px;
+    text-align: center;
+    position: relative;
+    border: 2px solid;
+    border-color:#fac031;
+}
+
+.container-popup-waybuy .model .btn-close{
+    position: absolute;
+    top: 15px; right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+.button-popup {
+    margin: 50px 20px;
+}
+
+.button-popup1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-popup1 a{
+    margin-top: -5px;
+    background-color: #fac031;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 7.5px;
+    width: 220px;
+    transition: font-weight 0.2s ease, transform 0.2s ease;
+}
+
+.button-popup1 a:hover {
+    font-weight: 500;
+    transform: scale(1.2);
+}
